@@ -1,0 +1,110 @@
+<view class="useriflogininfo_box">
+      <view class="headportrait_box">
+            <view class="head_back">
+                  <open-data wx:if="{{hasUserInfo && canIUse}}" type="userAvatarUrl"></open-data>
+                  <image wx:if="{{!hasUserInfo && canIUse}}" src="/images/user_nologin.png"></image>
+            </view>
+      </view>
+      
+      <view class="loginbutton_box">
+            <view wx:if="{{!hasUserInfo && canIUse}}" class="logintext_1" >
+            <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击登录</button>
+            </view>
+            
+            <view wx:if="{{hasUserInfo && canIUse}}" class="logintext_1">
+                  <open-data type="userNickName"></open-data>
+            </view>
+            
+           
+      </view>
+</view>
+
+<view class="mineborder_box">
+      <view class="mine_icon" bindtap="clickButton" data-go="/pages/my_release/my_release_list/my_release_list" data-status="1">
+            <image src="/images/mine_published.png"></image>
+            <view>我发布的</view>
+      </view>
+      <view class="mine_icon" bindtap="clickButton" data-go="/pages/my-sell/my-sell" data-status="1">
+            <image src="/images/mine_selled.png"></image>
+            <view>我卖出的</view>
+      </view>
+</view>
+
+<view class="mineborder_box">
+      <view class="mine_icon" bindtap="clickButton" data-go="/pages/my-bought/my-bought" data-status="1">
+            <image src="/images/mine_bought.png"></image>
+            <view>我买到的</view>
+      </view>
+      <view class="mine_icon" bindtap="clickButton" data-go="/pages/collection/collection" data-status="1">
+            <image src="/images/mine_like.png"></image>
+            <view>我收藏的</view>
+      </view>
+       <view class="mine_icon" bindtap="clickButton" data-go="/pages/help/help" data-status="1">
+            <image src="/images/help_center.png"></image>
+            <view>关于程序</view>
+      </view>
+</view>
+
+<view class="blank"></view>
+<view class="mine_bottom_box">
+      <view class="mine_bottom_card" bindtap="clickButton" data-go="/pages/edit/edit" data-status="1">
+            <view class="bottom_info">
+                  <image src="/images/mine_info.png"></image>
+                  <view>个人资料</view>
+            </view>
+            <image src="/images/go.png"></image>
+      </view>
+      <view class="mine_bottom_card" >
+            <view class="bottom_info">
+                  <image src="/images/contact.png"></image>
+                  <view>联系客服</view>
+            </view>
+            <image src="/images/go.png"></image>
+            <button open-type="contact"></button>
+      </view>
+      <view class="mine_bottom_card">
+            <view class="bottom_info">
+                  <image src="/images/feedback.png"></image>
+                  <view>问题反馈</view>
+            </view>
+            <image src="/images/go.png"></image>
+            <button open-type="feedback"></button>
+      </view>
+      <view class="mine_bottom_card" bindtap="showShare">
+            <view class="bottom_info">
+                  <image src="/images/share.png"></image>
+                  <view>应用分享</view>
+            </view>
+            <image src="/images/go.png"></image>
+      </view>
+      <view wx:if="{{hasUserInfo && canIUse}}" class="mine_bottom_card" bindtap="exit">
+            <view class="bottom_info">
+                  <image src="/images/exit.png"></image>
+                  <view>退出登录</view>
+            </view>
+            <image src="/images/go.png"></image>
+      </view>
+      
+</view>
+
+
+<van-popup show="{{ showShare }}" bind:close="closePop">
+      <view class="share_contain">
+            <view class="share_border"></view>
+            <view class="share_title">分享到</view>
+            <view class="share_box">
+                  <view class="share_one">
+                        <image src="/images/weixin.png"></image>
+                        <view>微信好友</view>
+                        <button class="share_button" open-type="share"></button>
+                  </view>
+                  <view class="share_bor"></view>
+                  <view class="share_one">
+                        <image src="/images/pyq.png"></image>
+                        <view>朋友圈</view>
+                        <button class="share_button" bindtap="preview" data-link="{{poster}}"></button>
+                  </view>
+            </view>
+      </view>
+</van-popup>
+

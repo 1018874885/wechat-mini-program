@@ -1,0 +1,87 @@
+{
+  
+  "pages": [
+    "pages/mine/mine",
+    "pages/index/index",
+    
+    "pages/my_release/my_release_list/my_release_list",
+    "pages/releaseitem/releaseitem",
+    "pages/releaseitem_alter/releaseitem_alter",
+    "pages/demo/demo",
+    "pages/releaseitemOK/releaseitemOK",
+    "pages/release/release",
+    
+    "pages/login/login",
+    "pages/edit/edit",
+    "pages/classification/classification",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/mine_message/mine_message",
+    "pages/collection/collection",
+    "pages/order_form/order_form",
+    "pages/search/search",
+    "pages/feedback/feedback",
+    "pages/cosmeticspage/cosmeticspage",
+    "pages/phonepage/phonepage",
+    "pages/bookpage/bookpage",
+    "pages/bagpage/bagpage",
+    "pages/shoepage/shoepage",
+    "pages/authorization/authorization",
+    "pages/payment/payment",
+    "pages/chatroom/room/room",
+    "pages/help/help",
+    "pages/buy_ok/buy_ok",
+    "pages/my-bought/my-bought",
+    "pages/my-sell/my-sell",
+    "pages/delivery/delivery",
+    "pages/delivery_ok/delivery_ok"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00bfff",
+    "navigationBarTitleText": "北邮商城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#00c7ff",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icons/index.png",
+        "selectedIconPath": "icons/index_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "iconPath": "icons/classification.png",
+        "selectedIconPath": "icons/classification_select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "iconPath": "icons/release.png",
+        "selectedIconPath": "icons/release_select.png",
+        "text": "发布闲置"
+      },
+      {
+        "pagePath": "pages/mine_message/mine_message",
+        "iconPath": "icons/message.png",
+        "selectedIconPath": "icons/message_select.png",
+        "text": "消息",
+        "onTabItemTap":"go"
+
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "icons/mine.png",
+        "selectedIconPath": "icons/mine_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

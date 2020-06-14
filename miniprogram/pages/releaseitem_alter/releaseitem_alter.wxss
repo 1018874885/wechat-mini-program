@@ -1,0 +1,269 @@
+page {
+      background: #eeeeee;
+}
+
+
+.top_box{
+    width: 95%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 45rpx;
+    flex-direction: column;
+    border-radius: 20rpx;
+    background-color: #ffffff;
+    margin-left:20rpx;
+    margin-top:15rpx;
+}
+
+.release_card {
+    
+    width: 100%;
+    height: 124rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #eee;
+    
+    
+}
+
+.release_card text{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      font-size: 35rpx;
+      word-break:keep-all; 
+      font-weight: bold;
+      white-space: nowrap;
+      
+}
+.release_card input{
+      width: 100%;
+      height: 90rpx;
+      border-radius: 15rpx;
+      padding-left: 15rpx;
+      font-size: 35rpx;
+      letter-spacing: 2rpx;
+      background-color: #f6f6f6;
+      color: #8c9aa8;
+      margin-left: 50rpx;
+}
+
+
+.release_card_price {
+    
+    width: 100%;
+    height: 124rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #eee;
+    
+    
+}
+
+.release_card_price text{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      font-size: 35rpx;
+      word-break:keep-all; 
+      font-weight: bold;
+      white-space: nowrap;
+      
+}
+.release_card_price input{
+      width: 100%;
+      height: 90rpx;
+      border-radius: 15rpx;
+      padding-left: 15rpx;
+      font-size: 35rpx;
+      letter-spacing: 2rpx;
+      background-color: #f6f6f6;
+      color: #8c9aa8;
+      margin-left: 30rpx;
+}
+.category_select{
+      width: 100%;
+      height: 90rpx;
+      border-radius: 15rpx;
+      position: left;
+      margin-right: 200rpx;
+      font-size: 35rpx;
+      letter-spacing: 2rpx;
+      background-color: #f6f6f6;
+      color: #8c9aa8;
+      line-height: 30rpx;
+      display: flex;
+      align-items: center;
+      padding-left: 15rpx;
+           
+}
+
+
+.release_card_info {
+    
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.release_card_info text{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      font-size: 35rpx;
+      word-break:keep-all; 
+      font-weight: bold;
+      white-space: nowrap;
+      
+}
+.infoarea{
+  width:100%;
+  height:300rpx;
+  margin-bottom: 15rpx;
+  margin-top:15rpx;
+  background-color: #f6f6f6;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+}
+
+
+
+.info_text {
+      width: 100%;
+      height: 300rpx;
+      padding: 20rpx;
+      border-radius: 10rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background: rgb(238, 238, 238);
+}
+
+.info_text textarea {
+      width: 100%;
+      height: 130rpx;
+      font-size: 35rpx;
+      color: #8c9aa8;
+      border-spacing: 2rpx;
+}
+
+.info_count {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 28rpx;
+      letter-spacing: 2rpx;
+      color: #8c9aa8;
+}
+
+.b_place {
+      width: 100%;
+      padding: 10rpx;
+      display: flex;
+      box-sizing: border-box;
+}
+
+.b_plecebox {
+      width: 100%;
+      height: 80rpx;
+      padding: 0 20rpx;
+      border-radius: 10rpx;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      background: rgb(238, 238, 238);
+}
+
+.imgtext {
+  display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      font-size: 35rpx;
+      word-break:keep-all; 
+      font-weight: bold;
+      white-space: nowrap;
+      padding-left: 60rpx;
+      padding-top:15rpx;
+}
+ /* 图片 */
+ .image_box{
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      background-color: white;
+      margin-top:20rpx;
+      margin-left:20rpx;
+      border-radius: 15rpx;
+     }
+     .img_box{
+      border: 5rpx;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.452);
+      width: 200rpx;
+      height: 200rpx;
+      margin-left: 35rpx;
+      margin-top: 20rpx;
+      margin-bottom: 20rpx;
+      position: relative;
+     }
+     /* 删除图片 */
+     .img_delect{
+      width:50rpx;
+      height:50rpx;
+      border-radius:50%;
+      position:absolute;
+      right:-20rpx;
+      top:-20rpx;
+     }
+     .img{
+      width: 100%;
+      height: 100%;
+     }
+
+
+.releasebutton{
+    position: relative;
+    width: 80%;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: yellow;
+    border-radius: 30rpx;
+    margin-left:80rpx;
+    margin-top:30rpx;
+    margin-bottom:20rpx;
+    border:solid;
+    
+}
+
+
+.release_button_info {
+    display: flex;
+    height: 100%;
+    align-items: center;   
+}
+
+.release_button_text1 {
+    font-size: 35rpx;
+    letter-spacing: 3rpx;
+    padding-left: 30rpx;
+    font-weight: bold;
+}

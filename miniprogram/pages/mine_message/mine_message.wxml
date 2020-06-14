@@ -1,0 +1,48 @@
+<van-divider />
+<view wx:for="{{real_list}}" wx:key="{{_id}}">
+
+<view  wx:if="{{item.isFlag==0}}">
+<navigator bindtap="go" data-item="{{item}}" class="message_box" 
+           url='/pages/chatroom/room/room?id={{item.chatroom_id}}&op_id={{item.seller_id}}&good_pic={{item.current_good_imgurl}}&op_name={{item.seller_name}}&good_id={{item.current_good_id}}&seller_id={{item.seller_id}}'>
+<view class="goods_img_wrap">
+     <image src="{{item.seller_head}}" />
+</view>
+
+<view class="goods_info_wrap">
+<view class="op_name">{{item.seller_name}}<van-tag plain type="warning">卖家</van-tag></view>
+<view wx:if="{{item.newFlag==1}}"><van-tag plain type="danger">新信息</van-tag></view>
+</view>
+
+<view class="good_pic">
+    <image src="{{item.current_good_imgurl}}" />
+</view>
+
+ </navigator>
+</view>
+<van-divider />
+
+
+<view wx:if="{{item.isFlag==1}}">
+<navigator bindtap="go" data-item="{{item}}" class="message_box" 
+           url='/pages/chatroom/room/room?id={{item.chatroom_id}}&op_id={{item._openid}}&good_pic={{item.current_good_imgurl}}&op_name={{item.own_name}}&good_id={{item.current_good_id}}&seller_id={{item.seller_id}}'>
+<view class="goods_img_wrap">
+     <image src="{{item.own_head}}" />
+</view>
+
+<view class="goods_info_wrap">
+<view class="op_name">{{item.own_name}}<van-tag plain type="warning">买家</van-tag></view>
+<view wx:if="{{item.newFlag==1}}"><van-tag plain type="danger">新信息</van-tag></view>
+</view>
+
+<view class="good_pic">
+    <image src="{{item.current_good_imgurl}}" />
+</view>
+</navigator>
+</view>
+<van-divider />
+</view>
+
+
+
+
+

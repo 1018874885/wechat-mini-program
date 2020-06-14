@@ -1,0 +1,231 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wxad4dd032d90c09e0",
+	"projectname": "%E6%AF%95%E8%AE%BE-%E5%BE%AE%E4%BF%A1%E5%95%86%E5%9F%8E",
+	"libVersion": "2.11.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/releaseitem/releaseitem",
+					"pathName": "pages/releaseitem/releaseitem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my_release/my_release_list/my_release_list",
+					"pathName": "pages/my_release/my_release_list/my_release_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/releaseitemOK/releaseitemOK",
+					"pathName": "pages/releaseitemOK/releaseitemOK",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/phonepage/phonepage",
+					"pathName": "pages/phonepage/phonepage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/goods_detail/goods_detail",
+					"pathName": "pages/goods_detail/goods_detail",
+					"query": "goods_id=42c9a7b15e7aefb20006cbfe5bdb669c",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/releaseitem_alter/releaseitem_alter",
+					"pathName": "pages/releaseitem_alter/releaseitem_alter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/authorization/authorization",
+					"pathName": "pages/authorization/authorization",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/collection/collection",
+					"pathName": "pages/collection/collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pages/chatroom/room/room",
+					"pathName": "pages/chatroom/room/room",
+					"query": "chatRoomGroupId=oEHiI5DOUAvHIkXb7m7t15xaiAAAoEHiI5GzueicCdGkcs2S0Xb8Jjtw42c9a7b15e7aefb20006cbfe5bdb669c",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "pages/mine_message/mine_message",
+					"pathName": "pages/mine_message/mine_message",
+					"query": "app.globalData.openid=oEHiI5DOUAvHIkXb7m7t15xaiAAA",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classification/classification",
+					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_form/order_form",
+					"pathName": "pages/order_form/order_form",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_form/order_form",
+					"pathName": "pages/order_form/order_form",
+					"query": "good_id= f3db088f5e95439300a804420db5b6a5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_form/order_form",
+					"pathName": "pages/order_form/order_form",
+					"query": "good_id=f3db088f5e95439300a804420db5b6a5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buy_ok/buy_ok",
+					"pathName": "pages/buy_ok/buy_ok",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my-bought/my-bought",
+					"pathName": "pages/my-bought/my-bought",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my-bought/my-bought",
+					"pathName": "pages/my-bought/my-bought",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 24,
+					"name": "pages/delivery/delivery",
+					"pathName": "pages/delivery/delivery",
+					"query": "good_id=17b0c7775e9586a500005298145a3fd9",
+					"scene": null
+				}
+			]
+		}
+	}
+}

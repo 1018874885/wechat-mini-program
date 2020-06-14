@@ -1,0 +1,38 @@
+<searchInput></searchInput>
+
+<van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+  <van-sidebar-item title="手机" />
+  <van-sidebar-item title="书籍" />
+  <van-sidebar-item title="箱包" />
+  <van-sidebar-item title="化妆品" />
+  <van-sidebar-item title="鞋子" />
+  <van-sidebar-item title="服饰" />
+  <van-sidebar-item title="音频" />
+</van-sidebar>
+
+<view class="right" wx:for="{{list}}" wx:key="{{_id}}">
+
+<navigator class="goods_item" url='/pages/goods_detail/goods_detail?goods_id={{item._id}}'>
+ <van-card
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.goods_imgurl[0]}}"
+  >
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+     <view class="list_time">{{morejs.timelog(item.creat )}}发布</view>
+  </view>
+</van-card>
+                  
+</navigator>
+<van-divider />
+
+
+
+</view>
+

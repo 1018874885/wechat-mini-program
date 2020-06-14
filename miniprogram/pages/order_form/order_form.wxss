@@ -1,0 +1,122 @@
+page {
+    background: #dddddd;
+}
+.page_box {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 24rpx;
+}
+
+.releaseitem_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  box-sizing: border-box; 
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+  background-color: #f6f6f6;
+}
+
+.releaseitem_title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3rpx solid orange;
+  padding-bottom: 24rpx;
+}
+
+.releaseitem_status {
+  font-size: 35rpx;
+  letter-spacing: 2rpx;
+  display: flex;
+  font-weight: bold;    
+}
+
+.text-red {
+  color: #f80202;
+}
+
+.releaseitem_status image {
+  width: 48rpx;
+  height: 48rpx;
+  padding-right: 10rpx;
+}
+
+.releaseitem_time {
+  font-size: 28rpx;
+  color: #b2b2b2;
+  letter-spacing: 2rpx;
+  font-weight: bold;
+}
+
+.releaseitem_body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  border-bottom: 3rpx solid orange;
+}
+
+.releaseitem_body image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 15rpx;
+}
+
+.releaseitem_body_info {
+  width: calc(100% - 130rpx);
+  padding: 0 20rpx;
+  height: 130rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  
+}
+
+.releaseitem_body_info_namebox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 12rpx;
+  
+}
+
+.releaseitem_body_info_nametext {
+  font-size: 35rpx;
+  letter-spacing: 2rpx;
+  font-weight: bold;
+  padding-top:10rpx;
+  
+}
+
+
+.releaseitem_price {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32rpx;
+  color: #f80202;
+  font-weight: bold;
+  padding-top:25rpx;
+  padding-bottom: 40rpx;
+  height:25rpx;
+}
+
+.quhuo_inform_text{
+    font-size: 30rpx;
+    font-weight: bold;
+    color:grey;
+    padding-left:5rpx;
+    padding-top:15rpx;
+    padding-bottom: 10rpx;
+    
+}
+
+.ziti{
+    padding-top: 5rpx;
+}

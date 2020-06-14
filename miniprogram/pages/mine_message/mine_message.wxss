@@ -1,0 +1,43 @@
+
+.message_box {
+    display: flex;    
+    width: 100%;
+    border-radius: 15rpx;
+    background-color:#f6f6f6;
+  }
+  .message_box .goods_img_wrap {
+   
+    width:170rpx;
+    padding-left: 20rpx;
+  }
+  .message_box .goods_img_wrap image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 25rpx;
+  }
+
+  .message_box .goods_img_wrap .newmes{
+  font-size: 30rpx;
+  font-weight: bold;
+  background-color: red;
+}
+
+  .message_box .goods_info_wrap {
+   flex:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10rpx;
+    width:100rpx;
+  }
+
+  .message_box .good_pic{
+    width:170rpx;
+    padding-left: 20rpx;
+  }
+
+  .message_box .good_pic image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 25rpx;
+  }

@@ -1,0 +1,240 @@
+
+/*  用户是否登录框样式   */
+.useriflogininfo_box {
+    width: 100%;
+    padding: 0 30rpx 30rpx 30rpx;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #eee;
+    background-color: #00bfff;
+}
+
+/*   登录框样式   */
+.loginbutton_box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content:center;
+    height: 140rpx;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx;
+    
+}
+
+/*   登录框文本样式1   */
+.loginbutton_box button {
+    font-size: 45rpx;
+    letter-spacing: 2rpx;
+    color:#fff;
+    text-align: left;
+}
+
+.logintext_1 {
+    font-size: 45rpx;
+    letter-spacing: 2rpx;
+    color: #fff;
+    text-align: left;
+}
+
+/*   登录框文本样式2   */
+.logintext_2 {
+    font-size: 34rpx;
+    color: #fff;
+    line-height: 40rpx;
+}
+
+/*   头像框样式   */
+.headportrait_box{
+    width: 25%;
+    height: 140rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*   头像框背景样式   */
+.head_back {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 70rpx;
+    overflow: hidden;
+    
+}
+
+/*   头像框图片样式   */
+.head_back image {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+/*   我发布的和我买到的框样式   */
+.mineborder_box {
+    width: 97%;
+    padding: 20rpx 0;
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    border-style: solid;
+    border-color: grey;
+    margin:10rpx auto;
+    
+    
+}
+
+/*   图标样式   */
+.mine_icon{
+    width: 160rpx;
+    height: 160rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;  
+}
+
+.mine_icon view {
+    font-size: 26rpx;
+    padding-top: 20rpx;
+}
+
+.mine_icon image {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+/*   分隔线样式   */
+.blank {
+    width: 100%;
+    height: 20rpx;
+    background:#f4f4f4;
+    
+}
+
+/*   底部框样式   */
+.mine_bottom_box {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 45rpx;
+    flex-direction: column;
+    
+    
+}
+
+/*   底部卡片样式   */
+.mine_bottom_card {
+    position: relative;
+    width: 100%;
+    height: 124rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #eee;
+    background: #f6f6f6;
+    
+}
+.mine_bottom_card button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+   
+}
+.mine_bottom_card image {
+    width: 14rpx;
+    height: 25rpx;
+}
+
+/*   底部信息栏样式   */
+.bottom_info {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.bottom_info image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.bottom_info view {
+    font-size: 35rpx;
+    letter-spacing: 3rpx;
+    padding-left: 30rpx;
+}
+
+
+.share_contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share_box {
+    display: flex;
+    align-items: center;
+    padding: 10rpx 20rpx 25rpx 20rpx;
+    box-sizing: border-box;
+    width: 500rpx;
+    justify-content: space-around;
+}
+
+.share_one {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share_one image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.share_one view {
+    padding-top: 20rpx;
+    font-size: 26rpx;
+}
+
+.share_title {
+    font-size: 30rpx;
+    letter-spacing: 3rpx;
+    padding: 16rpx;
+}
+
+.share_border {
+    margin-top: 20rpx;
+    display: flex;
+    box-sizing: border-box;
+    height: 6rpx;
+    width: 60rpx;
+    border-radius: 3rpx;
+    border-bottom:6rpx solid #fbbd08;
+}
+
+.share_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.01;
+    border: none;
+}
+
+.share_button::after {
+    border: none;
+}
+
+.share_bor {
+    height: 60rpx;
+    width: 1rpx;
+    border-left: 1rpx solid #e7e7e7;
+}
+

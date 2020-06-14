@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-transition": "@vant/weapp/transition/index"
+  },
+  "navigationBarTitleText": "搜索"
+}

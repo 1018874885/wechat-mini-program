@@ -1,0 +1,72 @@
+
+<wxs src="../../common.wxs" module="morejs" />
+<view>
+   <searchInput></searchInput>
+</view>
+
+<view class="index_swiper">
+      <swiper autoplay indicator-dots circular>
+              <swiper-item wx:for="{{carousellist}}" wx:key="id">
+                           <navigator>
+                            <image src="{{item}}" mode="widthFix"></image>
+                           </navigator>
+              </swiper-item>
+      </swiper>
+</view>
+
+<view class="blank"></view>
+
+<view class="medium_box">
+<view class="mine_icon"  bindtap="goclass" data-go="/pages/cosmeticspage/cosmeticspage">
+            <image src="/images/index_icon/cosmetics.png"></image>
+            <view>化妆品</view>
+</view>
+<view class="mine_icon" id="text" bindtap="goclass" data-go="/pages/phonepage/phonepage">
+            <image src="/images/index_icon/phone.png"></image>
+            <view>数码</view>
+</view>
+<view class="mine_icon" bindtap="goclass" data-go="/pages/bookpage/bookpage">
+            <image src="/images/index_icon/book.png"></image>
+            <view>图书</view>
+</view>
+<view class="mine_icon" bindtap="goclass" data-go="/pages/bagpage/bagpage">
+            <image src="/images/index_icon/bag.png"></image>
+            <view>箱包</view>
+</view>
+<view class="mine_icon"  bindtap="goclass" data-go="/pages/shoepage/shoepage">
+            <image src="/images/index_icon/shoe.png"></image>
+            <view>户外</view>
+</view>
+</view>
+<van-divider />
+<view class="goods" wx:for="{{list}}" wx:key="{{_id}}">
+<view bindtap="detail" data-detail="{{item}}">
+<van-card
+  
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.goods_imgurl[0]}}"
+  
+
+>
+  
+
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+     <view class="list_time">{{morejs.timelog(item.creat )}}发布</view>
+  </view>
+
+  
+</van-card>
+</view>
+<van-divider />
+      </view>
+
+
+
+<!--商品列表-->

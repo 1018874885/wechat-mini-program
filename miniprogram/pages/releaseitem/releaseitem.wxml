@@ -1,0 +1,74 @@
+<view class="top_box">
+<view class="release_card">
+<text>宝贝名:</text>
+<input maxlength="20" placeholder="请输入您的宝贝名称" value="{{good_name}}" bindinput="nameInput"  />
+</view>
+
+<view class="release_card_price">
+<text>价格(元):</text>
+<input maxlength="20" placeholder="请输入您的宝贝价格" value="{{good_price}}" bindinput="priceInput"  />
+</view>
+
+<view class="release_card">
+<text>宝贝分类:</text>
+<picker bindchange="chooseCategory" value="{{cids}}" range="{{category}}" range-key="name">
+<view class="category_select">
+<block wx:if="{{cids!==-1}}">当前选择：{{category[cids].name}}</block>
+<block wx:if="{{cids==-1}}">请选择宝贝分类</block>     
+</view>
+</picker>
+</view>
+
+<view class="release_card">
+<text>所在校区:</text>
+<picker bindchange="chooseCampus" value="{{ids}}" range="{{campus}}" range-key="name">
+<view class="category_select">
+<block wx:if="{{ids!==-1}}">当前选择：{{campus[ids].name}}</block>
+<block wx:if="{{ids==-1}}">请选择所在校区</block>     
+</view>
+</picker>
+</view>
+
+
+
+
+<view class='release_card_info'>
+<text>宝贝信息</text>
+</view>
+<view class='infoarea'>
+<view class="info_text">
+<textarea value="{{notes}}" bindinput="noteInput" maxlength="50" placeholder="请随便说点相关的"></textarea>
+<view class="info_count">{{note_counts}}/50</view>
+</view>
+
+</view>
+</view>
+
+
+<view class="imgtext">添加照片</view>
+ <!-- 图片 -->
+ <view class="image_box">
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+   <view class='img_box'>
+    <image class='img' src='{{item}}'></image>
+
+    <view class='img_delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+     <image class='img' src='../../images/delete.png'></image>  
+    </view>
+    
+   </view>
+  </block>
+  <view class='img_box' bindtap='addPic' wx:if="{{imgbox.length<9}}">
+   <image class='img' src='../../images/addimage.png'></image>  
+  </view>
+ </view>
+ 
+
+
+<view class="releasebutton" bindtap="confirmRelease" data-go="/pages/releaseitemOK/releaseitemOK">
+            <view class="release_button_info">
+                  
+                  <view class="release_button_text1">确定发布</view>
+                  
+            </view>
+      </view>

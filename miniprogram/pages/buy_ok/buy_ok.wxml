@@ -1,0 +1,20 @@
+<view class="releaseOK_box">
+      <image src="/images/success.png" mode="widthFix"></image>
+      <view class="releaseOK_text">支付成功！</view>
+</view>
+
+
+<view class="bottom_box">
+
+<view class="bbox" bindtap="clickButton1">
+<view class="bbox_text1">
+<text>回到首页</text>
+</view>
+</view>
+
+<view class="bbox" bindtap="clickButton2">
+<view class="bbox_text1">
+<text>我买到的</text>
+</view>
+</view>
+</view>

@@ -1,0 +1,43 @@
+
+<van-divider />
+<block wx:if="{{list.length!==0}}" wx:for="{{list}}" wx:key="_id">
+<view  bindtap="detail" data-detail="{{item}}">
+
+
+<van-card
+  
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.good_imgurl}}"
+  
+
+>
+  
+
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.cids].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.ids].name}}</van-tag>
+      <view></view>
+  </view>
+
+  
+</van-card>
+
+
+
+</view>
+
+    
+    <view class="cancelcollect" bindtap="collectGood" data-detail="{{item}}">
+    <view wx:if="{{item.iscollect==1}}">
+    <van-button icon="/images/collect2.png" size="small" type="info">取消收藏</van-button>
+    </view>
+    <view wx:if="{{item.iscollect==0}}">
+    <van-button icon="/images/collect1.png" size="small" type="info">点击收藏</van-button>
+    </view>
+    </view>
+   
+  
+  <van-divider />
+</block>

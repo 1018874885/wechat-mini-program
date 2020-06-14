@@ -1,0 +1,70 @@
+<wxs src="../../common.wxs" module="morejs" />
+<view class="page_box" >
+      <block >
+            <view class="releaseitem_box" >
+                  <view class="releaseitem_title">
+                        <view class="releaseitem_status ">
+                              <image lazy-load src="/images/sell.png"></image>
+                              待付款
+                        </view>
+                       <view class="releaseitem_time">发布于：{{morejs.timelog(info.creat)}}</view>
+                  </view>
+                  <view class="releaseitem_body"  bindtap="detail" data-detail="{{info._id}}">
+                        <image lazy-load src="{{info.goods_imgurl[0]}}"></image>
+                        <view class="releaseitem_body_info">
+                              <view class="releaseitem_body_info_namebox">
+                                    <view class="releaseitem_body_info_nametext text-cut">{{info.good_name}}</view>
+                                   
+                              </view>
+                              <view class="releaseitem_price">￥{{info.good_price}}.00元</view>
+                              
+                        </view>
+                  </view>
+
+
+<view class="quhuo_inform_text">取货方式</view>
+<van-radio-group value="{{ radio }}" bind:change="onChange">
+  <van-radio name="1" checked-color="#07c160">自提</van-radio>
+  <van-radio name="2" checked-color="#07c160">邮寄</van-radio>
+</van-radio-group>
+<view wx:if="{{radio==1}}" class="ziti">
+<van-notice-bar
+  backgroundColor="#D2E9FF"
+  color="#00bfff"
+  scrollable="false"
+  text="请与卖家联系。"
+/>
+</view>
+<view wx:if="{{radio==2}}">
+    <van-field
+    value="{{ address }}"
+    label="地址"
+    type="textarea"
+    placeholder="请输入地址"
+    autosize
+    border="{{ true }}"
+    bind:input="input1"
+    
+  />
+</view>
+<view class="quhuo_inform_text">订单备注</view>
+<van-field
+    value="{{ beizhu }}"
+    label="留言"
+    type="textarea"
+    placeholder="选填,请先和卖家商量一致"
+    autosize
+    border="{{ false }}"
+    bind:input="input2"
+  />
+  
+  
+            </view>
+      </block>
+</view>
+
+<van-submit-bar
+  price="{{ info.good_price*100 }}"
+  button-text="立即付款"
+  bind:submit="check"
+/>

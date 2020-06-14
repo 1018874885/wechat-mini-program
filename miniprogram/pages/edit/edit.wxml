@@ -1,0 +1,43 @@
+<view class="login_top_box">
+<view class="login_title">个人信息</view></view>
+<view class="login_body_box">
+
+      <view class="login_info_box">
+            
+            <picker bindchange="chooseCampus" value="{{ids}}" range="{{campus}}" range-key="name">
+                  <view class="login_campus">
+                        <block wx:if="{{ids!==-1}}">当前选择：{{campus[ids].name}}</block>
+                        <block wx:if="{{ids==-1}}">请选择您所在校区</block>
+                        <image class="login_right" src="/images/right.png" />
+                  </view>
+            </picker>
+
+            <view class="login_info_card">
+             <input bindinput="phoneInput" value="{{phone}}" maxlength="11" placeholder-class="info_style" placeholder="输入您的手机号码" />
+            </view>
+
+             <view class="login_info_card">
+                  <input bindinput="emailInput" value="{{email}}" maxlength="30" placeholder-class="info_style" placeholder="输入您的邮箱地址" />
+            </view>
+
+            <view class="login_info_card">
+                  <input bindinput="wxInput" value="{{wxnum}}" maxlength="30" placeholder-class="info_style" placeholder="输入您的微信号(选填)" />
+            </view>
+
+            <view class="login_info_card">
+                  <input type="number" bindinput="qqInput" value="{{qqnum}}" maxlength="20" placeholder-class="info_style" placeholder="输入您的QQ号(选填)" />
+            </view>
+
+      </view>
+
+
+      <!--底部确认-->
+      <button class="confirm_button" bindtap="check">提交修改</button>
+      <view class="shenming_title">
+            <image class="about" src="/images/shenming.png" />使用申明
+      </view>
+      <view class="shenming_text">1. 本程序将对您所提供的资料进行严格的管理及保护，本程序将使用相应的技术，防止您的个人资料丢失、被盗用或遭篡改。</view>
+      <view class="shenming_text">2. 在未经您同意及确认之前，本程序不会将您的注册信息用于任何其它商业目的。</view>
+     
+      <view class="shenming_text">3. 请您放心使用！</view>
+</view>

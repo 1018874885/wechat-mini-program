@@ -1,0 +1,7 @@
+<view class="search_input">
+    
+    <navigator url="/pages/search/search" open-type="navigate"> 
+    <image class="search_ico" src="/images/search.png"></image>
+       
+    </navigator>
+</view>

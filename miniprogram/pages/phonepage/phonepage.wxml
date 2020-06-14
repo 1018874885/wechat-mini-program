@@ -1,0 +1,74 @@
+<wxs src="../../common.wxs" module="morejs" />
+<view>
+   <searchInput></searchInput>
+   <!--监听自定义事件-->
+   <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange"></Tabs>
+<van-divider />
+<block wx:if="{{tabs[0].isActive}}" wx:for="{{list}}" wx:key="_id">
+<navigator class="goods_item" url='/pages/goods_detail/goods_detail?goods_id={{item._id}}'>
+ <van-card
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.goods_imgurl[0]}}"
+  >
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+     <view class="list_time">{{morejs.timelog(item.creat )}}发布</view>
+  </view>
+</van-card>
+                  
+</navigator>
+<van-divider />
+</block>
+
+
+ <block wx:if="{{tabs[1].isActive}}" wx:for="{{price_list}}" wx:key="{{_id}}">
+<navigator class="goods_item" url='/pages/goods_detail/goods_detail?goods_id={{item._id}}'>
+ <van-card
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.goods_imgurl[0]}}"
+  >
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+     <view class="list_time">{{morejs.timelog(item.creat )}}发布</view>
+  </view>
+</van-card>
+                  
+</navigator>
+<van-divider /></block>
+
+
+
+<block wx:if="{{tabs[2].isActive}}"  wx:for="{{creat_list}}" wx:key="{{_id}}">
+<navigator class="goods_item" url='/pages/goods_detail/goods_detail?goods_id={{item._id}}'>
+ <van-card
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.goods_imgurl[0]}}"
+  >
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+     <view class="list_time">{{morejs.timelog(item.creat )}}发布</view>
+  </view>
+</van-card>
+                  
+</navigator>
+<van-divider /></block>    
+     
+</view>

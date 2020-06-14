@@ -1,0 +1,45 @@
+<wxs src="../../common.wxs" module="morejs" />
+<van-divider />
+<block wx:if="{{list.length!==0}}" wx:for="{{list}}" wx:key="_id">
+<view >
+
+
+<van-card
+  tag="{{status[item.status].name}}"
+  price="{{item.good_price}}"
+  desc="{{item.notes}}"
+  title="{{item.good_name}}"
+  thumb="{{item.good_imgurl}}"
+  thumb-link='/pages/goods_detail/goods_detail?goods_id={{item.good_id}}'
+
+>
+  
+
+  <view slot="price-top">
+      <van-tag round type="primary">{{category[item.classid].name}}</van-tag>
+      <van-tag round type="success">{{campus[item.campusid].name}}</van-tag>
+      <view></view>
+  </view>
+  <view slot="footer">
+   <van-button type="primary" size="small" bindtap="go" data-item="{{item}}">联系买家</van-button>
+   <van-button wx:if="{{item.status==1}}" type="info" size="small" bindtap="manageRefund" data-item="{{item}}">处理退款</van-button>
+   <van-button wx:if="{{item.status==6}}" type="warning" size="small" bindtap="wuliu" data-item="{{item}}">查看物流</van-button>  
+   <van-button wx:if="{{item.status==0||item.status==1||item.status==5}}" type="danger" size="small" bindtap="delivery" data-item="{{item}}">去发货</van-button>
+  </view>
+
+  
+</van-card>
+</view>
+<van-divider />
+</block>
+
+
+<van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  
+/>
+<van-dialog id="van-dialog" />
+

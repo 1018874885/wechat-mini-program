@@ -1,0 +1,22 @@
+
+<view class="contain">
+      <view class="title">程序简介</view>
+      <view class="description">
+            <text space="emsp" decode="{{ true }}">{{des}}</text>
+      </view>
+      <view class="title">联系方式</view>
+      <view class="description">
+            <view class="tip" bindtap="copy" data-copy="17709710903" data-name="手机">
+                  <view>手机号</view>:
+                  <text>17709710903</text>
+            </view>
+            <view class="tip" bindtap="copy" data-copy="peien670609" data-name="微信">
+                  <view>Wechat</view>:
+                  <text>peien670609</text>
+            </view>
+            <view class="tip" bindtap="copy" data-copy="1018874885" data-name="QQ">
+                  <view>QQ</view>:
+                  <text>1018874885</text>
+            </view>
+      </view>
+</view>

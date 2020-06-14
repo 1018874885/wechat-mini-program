@@ -1,0 +1,49 @@
+<wxs src="../../../common.wxs" module="morejs" />
+<view class="page_box" wx:if="{{list.length!==0}}">
+      <block wx:for="{{list}}" wx:key="_id">
+            <view class="releaseitem_box" bindtap="detail" data-detail="{{item}}">
+                  <view class="releaseitem_title">
+                        <view class="releaseitem_status {{item.status==1?'text-red':''}}">
+                              <image lazy-load src="/images/sell.png"></image>
+                              {{item.status==0?'待出售':(item.status==1?'交易中':(item.status==2?'已完成':'交易取消'))}}
+                        </view>
+                       <view class="releaseitem_time">擦亮于：{{morejs.timelog(item.creat)}}</view>
+                  </view>
+                  <view class="releaseitem_body">
+                        <image lazy-load src="{{item.goods_imgurl[0]}}"></image>
+                        <view class="releaseitem_body_info">
+                              <view class="releaseitem_body_info_namebox">
+                                    <view class="releaseitem_body_info_nametext text-cut">{{item.good_name}}</view>
+                                   
+                              </view>
+                              <view class="releaseitem_price">￥{{item.good_price}}.00元</view>
+                             
+                        </view>
+                  </view>
+                  <view class="releaseitem_control">
+                  <view class="releaseitem_control_button bg_grey" catchtap="alt" data-del="{{item}}" wx:if="{{item.status==0}}">编辑</view>
+                        <view class="releaseitem_control_button bg_grey" catchtap="del" data-del="{{item}}" wx:if="{{item.status==0}}">删除</view>
+                       
+                        <view class="releaseitem_control_button bg_yellow" wx:if="{{item.status==0}}" catchtap="crash" data-crash="{{item}}">擦亮</view>
+                  </view>
+            </view>
+      </block>
+</view>
+
+<!--无内容显示-->
+<view class="nocontent" wx:if="{{list.length==0}}">
+      <image src="/images/empty.png"></image>
+      <view class="empty_text">这里空空如也~</view>
+</view>
+
+
+
+
+
+
+
+
+<block wx:if="{{list.length>20}}">
+      <import src="/common.wxml" />
+      <template is="loadmore" data="{{nomore}}" />
+</block>

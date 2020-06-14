@@ -1,0 +1,170 @@
+<wxs src="../../common.wxs" module="morejs" />
+
+<view class="top_seller_info">
+  <image class="sellerhead_pic" lazy-load src="{{userinfo.info.avatarUrl}}"></image>
+  <view class="info_box">
+  <view class="seller_name">{{userinfo.info.nickName}}</view>
+  <view class="seller_timeandlocation">{{morejs.timelog(creat)}}发布于{{campus[ids].name}}</view>
+ </view>
+</view>
+
+<view class="blank"></view>
+
+<view class="goods_name">{{good_name}}</view>
+<view class="goods_price">￥{{good_price}}.00元</view>
+
+<view class="med_blank"></view>
+
+<view class="goods_notes">{{notes}}</view>
+<view class="med_blank"></view>
+
+<view class="goods_img_box" wx:for="{{goods_imgurl}}">
+<image src="{{item}}" ></image>
+</view>
+
+<view class="goods_status"> <image lazy-load src="/images/goods_sell.png"></image><text>待出售</text></view>
+
+<view class="blank"></view>
+
+
+   <view class="seller_name1">{{userinfo.info.nickName}}</view>
+   <van-divider />
+    <view class="seller_box2">
+        <view class="seller_text">{{morejs.timelog(userinfo.stamp)}}来到bupt咸鱼,已发布{{goods_num}}件商品。当前位置为{{userinfo.campus.name}}</view>
+        <view class="seller_head">
+        <image lazy-load src="{{userinfo.info.avatarUrl}}"></image>
+        </view>
+    </view>
+
+<view class="auth_info">
+  <view class="info_card" wx:if="{{userinfo.wxnum}}">
+      <image  src="/images/weixin.png" ></image>
+      <text>微信认证已通过</text>        
+  </view>
+   <view class="info_card" wx:if="{{userinfo.qqnum}}">
+      <image  src="/images/qq.png" ></image>
+      <text>QQ认证已通过</text>        
+  </view>
+</view>
+
+<view class="blank"></view>
+<view class="message_title">全部留言*{{msgInfo.length}}</view>
+<van-divider />
+
+<view class="message_box">
+      
+      <view  wx:if="{{msgInfo.length==0}}">
+      <image src="/images/kong.png" />
+      <view class="no_message">留言空空如也</view>
+      </view>
+
+      <view wx:if="{{msgInfo.length!=0}}" wx:for="{{msgInfo}}" wx:key="_id">
+      <view class="message_card">
+
+      
+      <van-image round src="{{item.msg_head}}"></van-image>
+      
+     
+     <view class="msg_info">
+           <view class="leave_name">{{item.msg_name}}</view>
+           <text>\n</text>
+           <view bindtap="showInput1">
+           <view class="msg_content">{{item.strMsg}}</view>
+           <text>{{morejs.timelog(item.strMsg_time)}}</text>
+           </view>
+
+<van-popup custom-style='style' overlay="{{ true }}" position="bottom" show="{{ show1 }}" close-on-click-overlay="{{ true }}" bind:click-overlay="onHideInput1">
+       <view class='popup'>
+        <input class='input' focus="{{keyboardFocus}}" placeholder-class="placeholderStyle" 
+               placeholder='留言' bindinput='responseMsg' bindblur="onHideInput1" 
+               confirm-type="send" bindconfirm="sendResponse">
+       </input>
+        <button class='button' type="primary" bindtap="sendResponse">发送</button>
+        </view>
+</van-popup>
+
+      </view>
+     
+      </view>
+      <van-divider />
+      </view>
+        
+</view>
+
+
+
+
+
+
+
+
+<view class="tabbar">
+      
+      <view class="tab_card" wx:if="{{current_id!==userinfo._openid}}">
+            
+            <image wx:if="{{isLike=='false'}}"src="/images/like1.png"></image>
+            <image wx:else src="/images/like2.png"></image>
+            <text>点赞</text>
+             <view class="tab_button" bindtap="likeGood1"></view>
+      </view>
+
+      <view class="tab_card" wx:if="{{current_id===userinfo._openid}}">
+            <image src="/images/like1.png"></image>
+            <text>点赞</text>
+             <view class="tab_button" bindtap="likeGood2"></view>
+      </view>
+      
+
+
+      
+
+       
+     
+     
+      <view class="tab_card">
+            <image  src="/images/liuyan.png"></image>
+            <text>留言</text>
+            <view class="tab_button" bindtap="showInput"></view>
+      </view>
+      
+<van-popup custom-style='style' overlay="{{ true }}" position="bottom" show="{{ show }}" close-on-click-overlay="{{ true }}" bind:click-overlay="onHideInput">
+       <view class='popup'>
+        <input class='input' focus="{{keyboardFocus}}" placeholder-class="placeholderStyle" 
+               placeholder='想说的话......' bindinput='bindInputMsg' bindblur="onHideInput" 
+               confirm-type="send" bindconfirm="sendTextMsg">
+       </input>
+        <button class='button' type="primary" bindtap="sendTextMsg">发送</button>
+        </view>
+</van-popup>
+
+
+
+      <view class="tab_card" wx:if="{{current_id!==userinfo._openid}}">
+            
+            <image wx:if="{{isCollect==0}}"src="/images/collect1.png"></image>
+            <image wx:else src="/images/collect2.png"></image>
+            <text>收藏</text>
+             <view class="tab_button" bindtap="collectGood1"></view>
+      </view>
+
+      <view class="tab_card" wx:if="{{current_id===userinfo._openid}}">
+            <image src="/images/collect1.png"></image>
+            <text>收藏</text> 
+             <view class="tab_button" bindtap="collectGood2"></view>
+      </view>
+
+      <view class="buy_box" wx:if="{{current_id!==userinfo._openid}}">
+            <view class="buy shadow" bindtap="bygo" data-id="{{chatroom_id}}">{{good_status==0?'我想要':'刚刚被抢光了'}}</view>
+      </view>
+      
+      <view class="buy_box" wx:if="{{current_id===userinfo._openid}}">
+            <view class="buy shadow" bindtap="manage">管理</view>
+      </view>
+</view>
+
+
+
+
+
+
+

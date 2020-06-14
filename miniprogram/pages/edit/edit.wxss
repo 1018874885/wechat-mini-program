@@ -1,0 +1,142 @@
+/*   登录页面顶端背景框样式   */
+.login_top_box {
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+    width: 100%;
+    height: 300rpx;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:#00bfff;
+}
+
+/*   主体框样式   */
+.login_body_box {
+    position: absolute;
+    top: 176rpx;
+    left: 0rpx;
+    width: 100%;
+    padding: 0rpx 40rpx 0rpx 40rpx;
+    box-sizing: border-box;
+}
+
+/*   登录页标题样式   */
+.login_title{
+      font-size:50rpx;
+      color:#fff;
+      letter-spacing: 2rpx;
+      text-align: center;
+      margin-top: 50rpx;
+      
+}
+
+/*   信息框样式   */
+.login_info_box {
+    border-radius: 32rpx;
+    width: 100%;
+    background: #fff;
+    padding: 50rpx 60rpx;
+    box-sizing: border-box;
+    box-shadow: 0 0 20rpx #eee;
+    
+}
+
+/*   校区框样式   */
+.login_campus {
+    margin-top: 24rpx;
+    width: 100%;
+    height: 92rpx;
+    background: #f1f3f8;
+    border-radius: 10rpx;
+    text-align: left;
+    padding: 0 20rpx 0 36rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8c9aa8;
+    
+}
+
+/*   获取图片样式   */
+.login_right {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+/*   信息行样式   */
+.login_info_card {
+    margin-top: 24rpx;
+    width: 100%;
+    height: 92rpx;
+    background: #f1f3f8;
+    border-radius: 10rpx;
+    text-align: left;
+    padding: 0 36rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8c9aa8;
+    
+}
+
+.login_info_card input {
+    width: 100%;
+    height: 100%;
+}
+
+/*  信息行字体样式   */
+.info_style {
+    font-size: 32rpx;
+    color: #8c9aa8;
+}
+
+/*  确认按钮样式   */
+.confirm_button {
+    margin-top: 50rpx;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00bfff;
+    border-radius: 60rpx;
+    color: #fff;
+    font-size: 40rpx;
+    letter-spacing: 4rpx;
+    box-shadow: 0 0 20rpx #eee;
+    border: none;
+}
+.confirm::after {
+    border: none;
+}
+
+/*   申明标题样式   */
+.shenming_title{
+    margin-top: 40rpx;
+    font-size: 32rpx;
+    letter-spacing: 2rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*   图片样式   */
+.about{
+    width: 32rpx;
+    height: 32rpx;
+    padding-right: 10rpx;
+}
+
+/*   申明文字样式   */
+.shenming_text{
+    padding-left: 30rpx;
+    padding-top: 20rpx;
+    font-size: 26rpx;
+    color: #acacac;
+    letter-spacing: 2rpx;
+    line-height: 42rpx;
+}

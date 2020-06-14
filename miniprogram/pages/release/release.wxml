@@ -1,0 +1,75 @@
+<view class="top_box">
+      <image src="/images/121.jpg" mode="aspectFill"></image>
+</view>
+
+
+<view class="medium_box">
+
+<view class="box1">
+<view class="box1_text1">
+<text>二手手机</text>
+</view>
+<view class="box1_text2">
+<text>北邮人手机怎么卖</text>
+</view>
+</view>
+
+<view class="box2">
+<view class="box2_text1">
+<text>扫码卖书</text>
+</view>
+<view class="box2_text2">
+<text>扫条形码卖书更方便</text>
+</view>
+</view>
+
+<view class="box3">
+<view class="box3_text1">
+<text>免费送</text>
+</view>
+<view class="box3_text2">
+<text>闲置再利用</text>
+</view>
+</view>
+</view>
+
+
+<view class="bottom_box">
+
+<view class="bbox">
+<view class="bbox_text1">
+<text>步骤一</text>
+</view>
+<view class="bbox_text2">
+<text>点击我要发布</text>
+</view>
+</view>
+
+<view class="bbox">
+<view class="bbox_text1">
+<text>步骤二</text>
+</view>
+<view class="bbox_text2">
+<text>填写宝贝信息</text>
+</view>
+</view>
+
+<view class="bbox">
+<view class="bbox_text1">
+<text>步骤三</text>
+</view>
+<view class="bbox_text2">
+<text>确定发布</text>
+</view>
+</view>
+</view>
+
+
+
+ <view class="releasebutton" bindtap="clickButton1" data-go="/pages/releaseitem/releaseitem">
+            <view class="release_button_info">
+                  <image src="/images/camera.png"></image>
+                  <view class="release_button_text1">发布闲置</view>
+                  <view class="release_button_text2">相册/拍照</view>
+            </view>
+      </view>

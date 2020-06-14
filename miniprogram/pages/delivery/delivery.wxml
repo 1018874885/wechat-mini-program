@@ -1,0 +1,69 @@
+<wxs src="../../common.wxs" module="morejs" />
+<view class="page_box" >
+      <block >
+            <view class="releaseitem_box" >
+                  <view class="releaseitem_title">
+                        <view class="releaseitem_status ">
+                              <image lazy-load src="/images/delivery.png"></image>
+                              待发货
+                        </view>
+                       <view class="releaseitem_time">付款于：{{morejs.timelog(item.creat)}}</view>
+                  </view>
+                  <view class="releaseitem_body"  bindtap="detail" data-detail="{{item.good_id}}">
+                        <image lazy-load src="{{item.good_imgurl}}"></image>
+                        <view class="releaseitem_body_info">
+                              <view class="releaseitem_body_info_namebox">
+                                    <view class="releaseitem_body_info_nametext text-cut">{{item.good_name}}</view>
+                                   
+                              </view>
+                              <view class="releaseitem_price">￥{{item.good_price}}.00元</view>
+                              
+                        </view>
+                  </view>
+
+<view class="info">
+<van-cell-group>
+  <van-cell title="收货地址" value="{{item.address}}" icon="/images/location.png"/>
+  <van-cell title="备注信息" value="{{item.beizhu}}" icon="/images/beizhu.png"/>
+</van-cell-group>
+</view>
+
+<view class="delivery_info">
+<van-field
+    value="{{ delivery_company }}"
+    label="快递公司"
+    type="textarea"
+    placeholder="请输入快递公司名称"
+    autosize
+    border="{{ true }}"
+    bind:input="input1"
+    
+  />
+
+</view>
+
+<view class="delivery_info">
+<van-field
+    value="{{ delivery_number }}"
+    label="物流单号"
+    type="textarea"
+    placeholder="请输入物流订单号"
+    autosize
+    border="{{ true }}"
+    bind:input="input2"
+    
+  />
+
+</view>  
+
+
+
+</view>
+</block>
+ </view>
+
+<van-submit-bar
+  
+  button-text="确认发货"
+  bind:submit="check"
+/>

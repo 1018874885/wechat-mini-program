@@ -1,0 +1,382 @@
+page{
+  background-color:white
+}
+
+.top_seller_info{
+    width: 100%;
+    height: 130rpx;
+    display: flex;
+    padding: 24rpx;
+   
+      box-sizing: border-box;
+}
+
+.top_seller_info .sellerhead_pic{
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+}
+.top_seller_info .seller_name{
+  font-weight: bold;
+  padding-left:18rpx;
+  letter-spacing: 5rpx;
+}
+
+.top_seller_info .info_box{
+display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10rpx 0;
+}
+.top_seller_info .seller_timeandlocation{
+  font-size: 22rpx;
+  color: grey;
+  padding-left:18rpx;
+  font-weight: bold;
+}
+
+.blank{
+  display: flex;
+  border-bottom: 20rpx solid #f6f6f6;
+  width:98%;
+}
+
+
+.goods_name{
+  font-size: 38rpx;
+  color: black;
+  font-weight: bold;
+  padding-left: 15rpx;
+  padding-top: 15rpx;
+}
+.goods_price{
+  font-size: 35rpx;
+  color: red;
+  font-weight: bold;
+  padding-left: 15rpx;
+  padding-top: 15rpx;
+}
+
+.med_blank{
+  display: flex;
+  border-bottom: 80rpx solid white;
+  width:98%;
+}
+
+.goods_notes{
+  font-size: 32rpx;
+  letter-spacing: 2rpx;
+  padding-left: 25rpx;
+}
+
+.goods_img_box{
+  
+  width:100%;
+}
+
+.goods_img_box image{
+  height:700rpx;
+  width:700rpx;
+  padding-left:25rpx;
+  
+  border-bottom: 20rpx,soild,white;
+}
+
+.goods_status{
+  display: flex;
+  
+}
+.goods_status image{
+  width: 37rpx;
+  height: 37rpx;
+  padding-left: 25rpx;
+}
+
+.goods_status text{
+  font-size: 29rpx;
+  font-weight: bold;
+  color: grey;
+  padding-left: 10rpx;
+  padding-bottom: 8rpx;
+}
+
+
+
+.seller_name1{
+  font-size: 35rpx;
+  font-weight: bold;
+  padding-left: 25rpx;
+  padding-top:10rpx;
+}
+.seller_box2{
+  display: flex;
+  width: 100%;
+  height: 124rpx;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.seller_box2 .seller_text{
+  font-size:28rpx;
+  padding-left:25rpx;
+  letter-spacing: 2rpx;
+}
+.seller_box2 .seller_head image{
+  width:130rpx;
+  height:130rpx;
+  padding-right:35rpx;
+}
+
+.auth_info{
+  display: flex;
+}
+.info_card{
+  display: flex;
+  height:40rpx;
+  width:260rpx;
+}
+.auth_info image{
+  width:35rpx;
+  height:35rpx;
+  border-radius: 50%;
+  padding-left: 3rpx;
+}
+
+.auth_info text{
+  font-size: 26rpx;
+  color:grey;
+  padding-left:8rpx;
+  padding-bottom:8rpx;
+}
+
+
+
+.mine_bottom_card {
+    position: relative;
+    width: 100%;
+    height: 124rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #eee;
+    background: #f6f6f6;
+    
+}
+.mine_bottom_card button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+   
+}
+.mine_bottom_card image {
+    width: 14rpx;
+    height: 25rpx;
+}
+
+/*   底部信息栏样式   */
+.bottom_info {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.tabbar {
+      width: 100%;
+      height: 96rpx;
+      background: #fff;
+      opacity: 1;
+      position: fixed;
+      left: 0rpx;
+      bottom: 0rpx;
+      display: flex;
+      padding: 10rpx;
+      border-top: 1rpx solid #eee;
+      align-items: center;
+      box-sizing: border-box;
+      z-index: 8;
+}
+
+.tab_card {
+      position: relative;
+      width: 20%;
+      height: 80rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+}
+
+.tab_card image {
+      width: 40rpx;
+      height: 40rpx;
+}
+
+.tab_card text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: calc(100% - 50rpx);
+      width: 100%;
+      font-size: 24rpx;
+      text-align: center;
+      white-space: nowrap;
+      padding-top: 4rpx;
+}
+
+.tab_button {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0rpx;
+      top: 0rpx;
+      opacity: 0.01;
+      z-index: 9;
+}
+
+.buy_box {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      margin-left:200rpx;
+      
+}
+
+.buy {
+      width: 90%;
+      height: 70rpx;
+      background: #fbbd08;
+      color: #000;
+      letter-spacing: 4rpx;
+      font-size: 30rpx;
+      font-weight: bold;
+      border-radius: 35rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+style{
+  z-index:10000;
+  width:90%;
+  margin-bottom: 50rpx; 
+  padding-bottom: 100rpx;
+}
+
+.popup{
+  display: flex; 
+  align-items: center;
+  background:rgb(242, 242, 242,1);
+}
+.input{
+  width: 65%;
+  height: 60rpx; 
+  display:block; 
+  margin: 30rpx auto;
+  background: #fff;
+}
+.placeholderStyle{
+  font-size: 26rpx;
+  margin: 0 20rpx;
+}
+.button{
+  height: 60rpx;
+  width: 20%;
+  line-height:60rpx;
+  text-align: center; 
+  font-size: 30rpx;
+  box-shadow: 8rpx;
+  color:#979797;
+}
+
+.message_box{
+  display: flex;
+  width: 100%;
+  height: 500rpx;
+  box-sizing: border-box;
+  flex-direction: column;
+  
+}
+
+.message_title{
+  font-size: 30rpx;
+  font-weight: bold;
+  padding-left: 25rpx;
+  padding-top:15rpx;
+}
+
+
+
+.message_box image{
+  width:400rpx;
+  height:200rpx;
+  padding-left: 150rpx;  
+}
+
+.message_box .no_message{
+  font-size: 32rpx;
+  color: grey;
+  padding-left: 250rpx;
+}
+
+
+
+
+.message_card{
+  width: 100%;
+  display: flex;
+  
+  padding:10rpx;
+  box-sizing: border-box; 
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+  
+
+  
+  
+  
+   
+}
+
+
+.message_card image{
+  width:90rpx;
+  height:90rpx;
+  padding-left: 0rpx;
+  padding-right:0rpx;
+  
+}
+.msg_info{
+  margin-left: 20rpx;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.leave_name{
+  display: flex;
+  margin-top: 23rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.msg_info msg_content{
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  padding-left: 35rpx;
+}
+.msg_info text{
+  font-size: 25rpx;
+  color:grey;
+  letter-spacing: 1rpx;
+}

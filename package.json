@@ -1,0 +1,17 @@
+{
+  "name": "wx-vant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@vant/weapp": "^1.0.7",
+    "vant-weapp": "^0.5.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZYH",
+  "license": "ISC",
+  "description": "商城node项目",
+  "private": true
+}
